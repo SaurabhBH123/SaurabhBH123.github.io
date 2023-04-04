@@ -10,7 +10,7 @@ const about = {
   role: 'Full Stack Web Developer',
   description:
     'A hard-working and innovative problem solver with proficiency in HTML, CSS, and Javascript,  React JS, Redux, Chakra UI, etc. Eager to learn new skills and help the organization in development.',
-  resume: './images/Saurabh_Bhandari_Resume.pdf',
+  resume: 'https://drive.google.com/u/0/uc?id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5&export=download',
   social: {
     linkedin: 'https://www.linkedin.com/in/saurabh-bhandari-47a6ba13a/',
     github: 'https://github.com/SaurabhBH123',

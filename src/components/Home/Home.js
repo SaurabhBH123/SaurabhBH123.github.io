@@ -5,17 +5,18 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { about } from '../../portfolio'
 import { contact } from '../../portfolio'
 import './Home.css'
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const { name, role, resume, social } = about
+  // console.log(resume)
   // const navigate=useNavigate()
   const handleResume = () => {
     window.open('https://drive.google.com/file/d/1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5/view?usp=sharing', '_blank');
-    // const link = document.createElement('a');
-    // link.download = 'Saurabh_Bhandari_Resume.pdf';
-    // document.body.appendChild(link);
-    // link.click();
+    const link = document.createElement('a');
+    link.download = 'Saurabh-Bhandari-Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
   }
   // const resumedown2 = () => {
       
@@ -56,14 +57,15 @@ const Home = () => {
             </span>
           </a>
         )} */}
-        {resume && (
-          <a href={resume} id='resume-button-2' onClick={handleResume} download>
-            <span type='button' className='btn btn--outline'>
-              Resume
-            </span>
-          </a>
-        )}
-        {/* <NavLink to="https://drive.google.com/uc?export=download&id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5">
+        {/* {resume && (
+          <a href={resume} className='nav-link resume' id='resume-button-2' onClick={handleResume} download>
+          <span type='button' className='btn btn--outline'>
+            Resume
+          </span>
+        </a>
+// https://drive.google.com/u/0/uc?id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5&export=download
+        )} */}
+        <a href="https://drive.google.com/uc?export=download&id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5">
             <button
               id="resume-button-2"
               style={{ border: "none", fontWeight: "bold", fontSize: "20px" }}
@@ -71,7 +73,7 @@ const Home = () => {
             >
               Resume
             </button>
-          </NavLink> */}
+          </a>
           {/* <a href={resume} onClick={handleResume} download>
             <button
               id="resume-button-2"

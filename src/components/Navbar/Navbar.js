@@ -13,6 +13,7 @@ const Navbar = () => {
   const [{ themeName, toggleTheme }] = useContext(ThemeContext)
   const [showNavList, setShowNavList] = useState(false)
   const { resume } = about
+  console.log(resume)
 
   const toggleNavList = () => setShowNavList(!showNavList)
 
@@ -87,13 +88,22 @@ const Navbar = () => {
           </Link>
           )} */}
           {/* <a href='Saurabh-Bhandari-Resume.pdf' target="_blank" download={true} rel="noreferrer" onClick={handleResume} className={"nav-link resume"} id="resume-link-1">Resume</a> */}
-          {resume && (
+          {/* {resume && (
           <a href={resume} className='nav-link resume' id='resume-button-1' onClick={handleResume} download>
             <span type='button' className='btn btn--outline' >
               Resume
             </span>
           </a>
-        )}
+        )} */}
+        <a href="https://drive.google.com/uc?export=download&id=1zvn-HpJZs1dv0SIuQvTh_0x5AZ-YRWI5" className='nav-link resume'>
+            <button
+              id="resume-button-1"
+              style={{ border: "none", fontWeight: "bold", fontSize: "20px" }}
+              onClick={handleResume}
+            >
+              Resume
+            </button>
+          </a>
           </li>
       </ul>
 
