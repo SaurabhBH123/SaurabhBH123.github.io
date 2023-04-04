@@ -1,0 +1,20 @@
+/* style={{display:"flex",margin:"auto",marginTop:"50px",width:"80%",marginBottom:"50px"}}
+ */
+
+.calendar{
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    width: 80%;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 600px) {
+    .calendar{
+        width: 250px;
+    }
+    .react-activity-calendar__footer{
+        display: flex;
+        flex-direction: column;
+    }
+}

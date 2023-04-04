@@ -1,0 +1,43 @@
+import React from "react";
+import GitHubCalendar from "react-github-calendar";
+import ReactTooltip from "react-tooltip";
+import "./Calendar.css";
+const Calender = () => {
+//   const selectLastHalfYear = (contributions) => {
+//     const currentYear = new Date().getFullYear();
+//     const currentMonth = new Date().getMonth();
+//     const shownMonths = 10;
+
+//     return contributions.filter((day) => {
+//       const date = new Date(day.date);
+//       const monthOfDay = date.getMonth();
+
+//       return (
+//         date.getFullYear() === currentYear &&
+//         monthOfDay > currentMonth - shownMonths &&
+//         monthOfDay <= currentMonth
+//       );
+//     });
+//   };
+  return (
+    <>
+    <h2 style={{display:"flex",alignItems:"center",justifyContent:"center",marginBottom:"50px",marginTop:"50px"}}>Git Stats</h2>
+    <div className="calendar">
+        
+      <GitHubCalendar
+        style={{ margin: "auto" }}
+        username="SaurabhBH123"
+        // transformData={selectLastHalfYear}
+        blockSize={20}
+        fontSize={20}
+        className="calendar react-activity-calendar"
+      >
+         <ReactTooltip delayShow={20} html /> 
+      </GitHubCalendar>
+    </div>
+    </>
+    
+  );
+};
+
+export default Calender;
